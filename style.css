@@ -28,11 +28,17 @@
     visibility: visible;
 }
 
+form{
+    display: flex;
+    justify-content: center;
+}
 form input {
-    width: 80%;
+    width: 52%;
     outline: none;
     padding: 5px;
     font-family: cursive;
+    margin-right: 3px;
+    border: 1px solid gray;
 }
 
 form button {
@@ -49,7 +55,7 @@ form button {
     box-shadow: 0 0 10px rgb(247, 241, 228);
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
+    width: 35%;
 }
 
 .list-item {
@@ -85,9 +91,29 @@ li {
     font-size: 15px;
     border: none;
     cursor: pointer;
-    visibility: hidden
+    visibility: hidden;
+    font-weight: bold;
 }
 
 .activeBtn {
     visibility: visible;
+}
+
+@media(max-width:912px){
+    .inner {
+        
+        width: 55%;
+    }
+}
+@media(max-width:533px){
+    .inner {
+        
+        width: 75%;
+    }
+}
+@media(max-width:394px){
+    .inner {
+        
+        width: 95%;
+    }
 }
